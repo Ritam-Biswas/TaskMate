@@ -1,0 +1,48 @@
+.to-do-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2% 0%;
+    background-color: #ffffff;
+    border-radius: 15px;
+
+    .list-container{
+        flex-basis: 80%;
+        flex-grow: 0;
+        overflow: auto;
+        padding: 0% 1% 0% 2%;
+    }
+
+    .list-input-container{
+        flex-basis: 8%;
+        flex-grow: 0;
+        background: #F3F3F3;
+        padding: 0% 2%;
+        margin: 0% 2%;
+        border-radius: 10px;
+
+        .list-form{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.8%;
+
+            .list-input-icons{
+                border: none;
+            }
+
+            input{
+                border-style: hidden;
+                background: #F3F3F3;
+                font-size: large;
+            }
+    
+            input:focus{
+                outline: none;
+            }
+
+        }
+
+    }
+}

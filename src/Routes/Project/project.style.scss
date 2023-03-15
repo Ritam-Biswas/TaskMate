@@ -1,0 +1,13 @@
+.project-container{
+    display: flex;
+    flex-basis: 80%;
+    align-items: center;
+
+    .project-contents{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,13 @@
+.profile-container{
+    display: flex;
+    flex-basis: 80%;
+    align-items: center;
+
+    .profile-contents{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+}

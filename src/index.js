@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { RenderProvider} from './Context/render.context';
+import { TaskVisibilityProvider } from './Context/taskVisibility.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <TaskVisibilityProvider>
+        <RenderProvider>
+          <App />    
+        </RenderProvider>
+      </TaskVisibilityProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
